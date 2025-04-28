@@ -4,12 +4,294 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Few</title>
+    
+
+
+    <style>
+        /* Class จะใช้เป็นจุด */
+        .container{
+            width: 960px;
+            margin: 0 auto;
+            background-color: brown;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+        }
+
+        /* Id จะใช้เป็น # */
+        #myBox{
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+        }
+    </style>
 </head>
-<body>
+
+    <!-- การขึ้นบันทัดใหม่ -->
+    <br>
+
     <!-- หัวข้อ -->
     <h1>asd</h1>
+
     <!-- ข้อความ -->
     <p>asd</p>
 
+    <!-- tag ลิงค์ ใช้สำหลับเปลี่ยนหน้าเว็บไซต์แต่ยังแท็บเดิม -->   
+    <a href ="https://github.com/66160137-Pitiphong/TestCode">go to Code</a><br>
+    <!-- จะใช้เป็นลิงค์หรือ html ที่เราสร้างก็ได้ -->
+    <a href="about.html">go to about</a><br>
+    <!-- target ไว้ขึ้นแท็บใหม่ --> 
+    <a href ="https://github.com/66160137-Pitiphong/TestCode" target="_blank">go to Code</a><br>
+
+    <!-- img src=ไว้ใส่ลิงค์รูปภาพ alt=ไว้ใส่ข้อความ width=ความกว้าง height=ความสูง--> 
+    <img src="Screenshot 2024-01-01 192809.png" alt="go to img" width="300" hright="300">
+    <!-- ไว้ใช้ตอนที่เราสร้างกล่องให้imgอยู่เวลาเรามีรูปเยอะๆ  img src=ไว้ใส่ลิงค์รูปภาพ alt=ไว้ใส่ข้อความ width=ความกว้าง height=ความสูง --> 
+    <img src="img/Screenshot 2023-08-13 021150.png" alt="go to img" width="300" hright="300">
+
+    <!-- การสรา้งตารางจัดเรียงข้อมูลให้เป็นแถวละคลอรัม --> 
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Position</th>
+        </tr>
+        <tr>
+             <!-- ข้อมูล --> 
+            <td>1</td>
+            <td>Few</td>
+            <td>20</td>
+            <td>Web Developer</td>
+        </tr>
+        <tr>
+            <!-- ข้อมูล --> 
+           <td>2</td>
+           <td>Few1</td>
+           <td>19</td>
+           <td>CEO</td>
+       </tr>
+    </table>
+
+    <!-- List=ใช้สำหลับการจัดการกับกลุ่มข้อมูลให้อยู่ในรูปแบบรายการเป็นจุดไข่ปลา --> 
+     <ul>
+         <li>Coffee</li>
+         <li>Tea</li>
+         <li>Milk</li>
+     </ul>
+     <!-- List=เรียงเป็นตัวเลข --> 
+     <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <!-- การทำให้ข้อความเป็นตัวหนา -->
+    <b>Bold text</b>
+
+    <!-- ข้อความสำคัญ -->
+    <strong>Important text</strong>
+
+    <!-- ข้อความตัววเอียง -->
+    <i>Italic text</i>
+
+    <!-- การเน้นข้อความ -->
+    <em>Emphasized text</em>
+
+    <!-- การทำเครื่องหมายที่ข้อความ -->
+    <mark>Marked text</mark>
+
+    <!-- การทำข้อความให้เล็กลง -->
+    <small>Smaller text</small>
+
+    <!-- ข้อความที่ถูกลบ -->
+    <del>Deleted text</del>
+
+    <!-- ข้อความที่ถูกแซก -->
+    <ins>Inserted text</ins>
+
+    <!-- ข้อความตัวห้อย -->
+    <sub>Subscript text</sub>
+
+    <!-- ข้อความตัวยก -->
+    <sup>Superscript text</sup>
+
+    <!-- formจะใช้สำหลับรวบรวมข้อมูลการป้อนข้อมูลของผู้ใช้และจะถูกส่งไปยังเซิฟเวอร์เพื่อประมวลผล placeholder=ใช้สำหลับเพิ่มข้อความบอกว่าตรงนี้ให้ใส่ข้อมูลอะไร -->
+    <form action="">
+        <label for="first name">First Name:</label> <br>
+        <input type="text" name="firstnaem" placeholder="enter your firstname"> <br>
+        <label for="last name">Last Name:</label> <br>
+        <input type="text" name="lastnaem"placeholder="enter your lastname"> <br>
+        <input type="button" value="Submit">
+
+        <!-- เอาไว้สร้างกรอบ -->
+        <fieldset>
+            <!-- ไว้อธิบายว่างอันนี้เป็นอะไรเช่น -->
+            <legend>ประวัติ</legend>
+            <label for="first name">First Name:</label> <br>
+            <input type="text" name="firstnaem" placeholder="enter your firstname"> <br>
+            <label for="last name">Last Name:</label> <br>
+            <input type="text" name="lastnaem"placeholder="enter your lastname"> <br>
+            <input type="button" value="Submit">
+    </fieldset>
+
+        <!-- ปุ่มกด -->
+        <input type="button"> <br>
+
+        <!-- ช่องติ๊กถูก -->
+        <input type="checkbox"><br>
+
+        <!-- ช่องเอาไว้เลือกสี -->
+        <input type="color"><br>
+
+        <!-- ช่องอาไว้เลือกวันเวลา -->
+        <input type="date"><br>
+
+        <!-- ช่องเอาไว้เลิอกวันที่เดือนและเวลา -->
+        <input type="datetime-local"><br>
+
+        <!-- ช่องเอาไว้ใส่อีเมล -->
+        <input type="email"><br>
+
+        <!-- ช่องเอาไว้ใส่ไฟล์หรือเลือกไฟล์ -->
+        <input type="file"><br>
+
+        <!-- ซ้อนไว้ -->
+        <input type="hidden"><br>
+
+        <!-- ใส่รูป -->
+        <input type="image"><br>
+
+        <!-- ช่องเลือกเดือน -->
+        <input type="month"><br>
+
+        <!-- ช่องใส่ตัวเลข -->
+        <input type="number"><br>
+
+        <!-- ช่องใส่รหัสผ่าน -->
+        <input type="password"><br>
+
+        <!-- ปุ่มวงกลมเอาไว้ติ๊กได้ -->
+        <input type="radio"><br>
+
+        <!-- ช่องการปรับขนาด -->
+        <input type="range"><br>
+
+        <!-- ปุ่มรีเซ้ต -->
+        <input type="reset"><br>
+
+        <!-- ช่องค้นหา -->
+        <input type="search"><br>
+
+        <!-- ปุ่มกดส่ง -->
+        <input type="submit"><br>
+
+          <!-- ปุ่มกดส่ง -->
+          <button type="submit">Sumbit</button> 
+
+        <!-- ช่องไว้ใส่เบอร์โทร -->
+        <input type="tel"><br>
+
+        <!-- ช่องใส่ข้อความ -->
+        <input type="text"><br>
+
+        <!-- ช่องเลือกเวลา -->
+        <input type="time"><br>
+
+        <!-- ช่องไว้ใส่ลิงค์ url -->
+        <input type="url"><br>
+
+        <!-- ช่องเลือกสัปดาห์ -->
+        <input type="week"><br>
+        
+        <!-- เอาไว้ทำเป็ยช่องสำหลับเลือกข้อความ -->
+        <select name="cars" id="cars">
+            <!-- เอาไว้เลือกรายการ ถ้าอยากให้toyotaขึ้นมาเป็นหัวข้อแรกต้องใส่ Selected-->
+            <option value="volvo">Volvo</option>
+            <option value="toyota">toyota</option>
+            <option value="toyota" Selected>toyota</option>        
+        </select>
+
+        <!-- ช่องไว้สำหลับเลือกข้อความที่เราใส่ไว้ให้หรือจะพิมพ์เอาก็ได้ -->
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+            <option value="volvo">
+            <option value="toyota">
+        </datalist>
+        
+        <!-- ไว้ใส่ข้อความหลายๆบันทัด มันจะเป็นกล้องให้เราใส่ -->
+        <textarea name="" id=""></textarea>    
+    </form>
+
+    <!-- (อันนี้คือส่วนของ Block Elements) Block Elements=1.จะเริ่มที่บรรทัดใหม่เสมอ 2.จะมีระยะขอบที่ให้มาเป็นค่าเริ่มต้น 3.จะมีความกว้าง 100% เต็มหน้า Web Brower 4.ที่มักจะใช้กันบ่อยๆเช่น <div>,<p>,<header>,<footer>,
+    <nav>,<section>,<form>,<ul> -->
+     <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eaque.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eaque.
+        </p>
+     </div>
+     
+     <!-- เส้นแบ่ง -->
+     <hr>
+    <!-- (อันนี้คือส่วนของ Inline Elements) Inline Elements=1.จะไม่เริ่มบรรทัดใหม่ 2.จะมีความกว้างตามเนื้อหาภายใน 3.ที่ใช้บ่อยๆ เช่น <a>,<button>,<input>,<span>,<strong> -->
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">content</a>
+
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+
+        <!-- (tag div) div=1.จะถูกใช้เป็นกล่องสำหรับ HTML elements ตัวอิ่นๆ 2.จะเป็น Block Element 3.เราจะใช้แท็ก div สำหรับการวางโครงสร้างให้กับหน้าเว็บ -->
+         <!-- Element แม่ -->
+        <div>
+            <!-- Element ลูก -->
+            <h1>Hello Html</h1>
+            <p>Learn html</p>
+
+            <!-- จะมีdivอีกตัวนิงก็ได้ -->
+            <div>
+                <p>Learn</p>
+            </div>
+        </div>
+
+        <!-- Class 1.ใช้สำหรับใช้ระบุชื่อให้กับ Html ได้ 2.จะถูกใช้เพื่ออ้างอิงไปที่ไฟล์ CSS 3.เราสามารถกำหนด Class ได้หลายตัวให้กับ tag HTML 4.Class สามารถใช้ซ้ำได้ -->
+         <div class="container">
+            <p>asdsa</p>
+
+            <!-- เราสามารถใช้ Class ซ้ำได้ -->
+            <div class="box">
+
+            </div>
+            <div class="box">
+
+            </div>
+        </div>
+        <!-- Id 1.เราสามารถใช้ระบุ id เฉพาะให้กับ tag HTMl 2.จะถูกใช้เพื่ออ้างอิงไปที่ไฟล์ CSS และสามารถใช้กับ Js เพื่อเข้าไปถึง Element HTML ได้ 3.ต้องมีแค่ตัวเดียว 4.ไม่สามารถใช้ซ้ำได้ ซึ่งต่างจาก Class ที่สามาถใช้ซ้ำได้ -->
+         <div id="myBox">
+            
+         </div>
+
+         <script>
+            let myBox = document.getElementById("myBox");
+
+            myBox.addEventListener("click", function(){ 
+                alert("Hello World")
+            })
+         </script>
+
+         <!-- Semantic Element คือ Element ที่มีความหมายในตัวมันเอง เช่น 
+            non-semantic element = <div>,<span> เช่น 
+            semantic element = <header>,<nav>,<section>,<footer> -->
+        <a href="https://www.w3schools.com/Html/html5_semantic_elements.asp" target="_blank">w3schools เอาไว้ดูCodeทำโครงสร้างเว็บ</a>
+        
 </body>
 </html>
